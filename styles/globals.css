@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-black
+    }
+}
+
+@layer components {
+    .hoverEffect {
+        @apply hover:bg-[#181818] rounded-full cursor-pointer transition duration-300
+    }
+}
+
+@media (forced-colors: active) {
+    /* High-contrast mode styles */
+    body {
+      color: CanvasText;
+      background: Canvas;
+    }
+  }
+  
